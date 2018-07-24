@@ -18,7 +18,7 @@ pipeline {
         stage('artifactory') {
             steps {
                 script {
-                    def server = Artifactory.newServer url: 'http://192.168.18.181:8081', username: 'ryansiu', password: '61498491'
+                    def server = Artifactory.server 'localhost'
                     def uploadSpec = """{
                     "files": [
                         {
