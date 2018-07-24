@@ -23,7 +23,7 @@ pipeline {
                     "files": [
                         {
                         "pattern": "hello_exec",
-                        "target": "enc_encoder/c_test"
+                        "target": "enc_encoder"
                         }
                     ]
                     }"""
