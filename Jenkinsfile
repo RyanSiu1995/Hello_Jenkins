@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('prebuild') {
             steps {
-                sh 'id -un'
+                echo 'hello world'
             }    
         }
         stage('build') {
