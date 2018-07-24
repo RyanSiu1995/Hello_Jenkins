@@ -1,11 +1,8 @@
 pipeline {
-    agent {
-        docker 'gcc/latest'
-    }
     stages {
         stage('prebuild') {
             steps {
-                echo 'It is running'
+                sh 'id -un'
             }    
         }
         stage('build') {
